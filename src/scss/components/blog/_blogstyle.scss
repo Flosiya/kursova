@@ -1,0 +1,95 @@
+.blog {
+    background-color: var(--bg, #101010);
+    padding: 75px;
+
+    &__container {
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        @include widthGap(3, 20px);
+    }
+
+    &__item {
+        background: var(--dark-grey, darkgrey);
+        position: relative;
+
+        // opacity: 0.8;
+        // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 0;
+            transition-duration: .3s;
+        }
+
+        &:hover{
+            cursor: pointer;
+            &::after{
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .blog__heading{
+                color: #FF6B00;
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        max-height: 420px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--bg, #1A1A1A);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    &__heading {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+        transition-duration: .3s;
+    }
+
+    &__text {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+        opacity: 0.5;
+    }
+}

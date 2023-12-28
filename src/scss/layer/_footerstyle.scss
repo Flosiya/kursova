@@ -1,0 +1,112 @@
+.footer {
+    padding: 40px;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__fishnet {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+        /* 112% */
+        letter-spacing: 0.16px;
+    }
+
+    .particles-js-canvas-el {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.contact-us {
+    &__title {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+        /* 112% */
+        letter-spacing: 0.16px;
+        margin-bottom: 10px;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__input {
+        height: 50px;
+        width: 350px;
+
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        padding-left: 18px;
+        margin-right: 12px;
+    }
+
+    &__input:hover,
+    &__input:focus {
+        border: 1px solid;
+        color: white;
+        outline: none;
+    }
+
+    &__submit {
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        color: var(--white, #FFF);
+        background: var(--dark-grey, #1A1A1A);
+        font-family: Kharkiv Tone;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: flex;
+        align-items: center;
+
+        padding: 4px 5px;
+        gap: 10px;
+
+        transition: 300ms ease;
+    }
+
+    &__submit:hover {
+        color: var(--dark-grey, #1A1A1A);
+        background: var(--orange, #FF6B00);
+    }
+
+    &__submit:active {
+        transition: 0ms;
+        color: var(--white, #FFF);
+        background: var(--dark-grey, #1A1A1A);
+    }
+
+
+}

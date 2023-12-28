@@ -1,0 +1,100 @@
+.reviews {
+    padding: 75px;
+    background-color: var(--bg, #101010);
+
+    &__title {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        padding-bottom: 30px;
+    }
+
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__nav-buttons{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        display: flex;
+        width: fit-content;
+    }
+
+    &__nav-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &::after{
+            display: none;
+        }
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+        &--prev{
+            transform: rotate(180deg);
+            margin-left: 10px;
+        }
+        &.swiper-button-disabled{
+            cursor: default;
+            svg {
+                stroke: #444444;
+            }
+        }
+    }
+
+    &__container-card {
+        background-color: var(--dark-grey, #1A1A1A);
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    &__svg{
+        margin-bottom: 10px;
+    }
+
+    &__comments {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+        margin-bottom: 120px;
+    }
+
+    &__autor {
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        /* 20.8px */
+
+        margin-bottom: 10px;
+    }
+
+    &__container-stars{
+        display: flex;
+        gap:6px;
+    }
+
+
+
+}

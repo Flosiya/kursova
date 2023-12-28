@@ -1,0 +1,48 @@
+.guarantee {
+    padding: 350px 0px;
+    background-image: linear-gradient(rgba(18, 19, 23, 0.4) 0%, rgba(47, 48, 58, 0.40) 100%), url(/src/img/background.jpg );
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    &__title {
+        width: 90%;
+        max-width: 450px;
+        color: var(--white, #FFF);
+        font-family: Kharkiv Tone;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 72px */
+        text-transform: lowercase;
+        margin-right: 205px;
+
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(256,256,256, .8);
+        width: 100%;
+        padding: 140px 110px;
+    }
+
+    &__description-text{
+        max-width: 400px;
+        color: #000;
+        font-family: Kharkiv Tone;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-transform: lowercase;
+    }
+}
