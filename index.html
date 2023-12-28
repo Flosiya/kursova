@@ -19,7 +19,7 @@
                     <use href="./public/img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <nav class="header__nav nav">
+            <nav class="header__nav nav js--mobile-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#about" class="nav__link"><span class="nav__span--orange">a</span>bout us</a>
@@ -33,11 +33,12 @@
                     <li class="nav__item">
                         <a href="#blog" class="nav__link"><span class="nav__span--orange">b</span>log</a>
                     </li>
-                    <li class="nav__item">
-                        <button class="nav__button" type="button " data-modal-open>order a project</button>
-                    </li>
-                </ul>
+                </ul> 
             </nav>
+            <button class="nav__button" type="button" data-modal-open>order a project</button>
+            <button class="header__burger-button js--header-button" type="button">
+                <span class="header__burger-icon"></span>
+            </button>
         </div>
 
     </header>

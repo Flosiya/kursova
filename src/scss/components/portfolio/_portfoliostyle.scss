@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 75px;
+    padding: 75px 0;
     background-color: var(--bg, #101010);
     width: 100%;
 
@@ -119,4 +119,42 @@
         background: var(--dark-grey, #1A1A1A);
     }
 
+}
+
+@include max(1360px){
+    .portfolio{
+        &__text{
+            font-size: 16px;
+        }
+    }
+}
+
+@include max(1200px){
+    .portfolio{
+        &__text{
+            font-size: 12px;
+        }
+    }
+}
+
+@include max(992px){
+    .portfolio{
+        &__text{
+            font-size: 16px;
+        }
+        &__list {
+            @include widthGap(2, 20px);
+        }
+    }
+}
+
+@include max(768px){
+    .portfolio{
+        &__list {
+            @include widthGap(1, 20px);
+        }
+        &__item{
+            max-width: 470px;
+        }
+    }
 }
