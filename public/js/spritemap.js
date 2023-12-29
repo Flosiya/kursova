@@ -1,1 +1,13 @@
-(self.webpackChunkkursach=self.webpackChunkkursach||[]).push([[355],{256:()=>{}}]);
+(self["webpackChunkkursach"] = self["webpackChunkkursach"] || []).push([["spritemap"],{
+
+/***/ "?c20d":
+/*!******************************!*\
+  !*** spritemap-dummy-module ***!
+  \******************************/
+/***/ (() => {
+
+
+
+/***/ })
+
+}]);
